@@ -12,11 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { ImagenPerfilComponent } from './test/imagen-perfil/imagen-perfil.component';
+import { MaterialTestComponent } from './test/material-test/material-test.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    ImagenPerfilComponent,
+    MaterialTestComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

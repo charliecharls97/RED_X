@@ -1,0 +1,33 @@
+/* Sidebar header styles */
+.sidebar-header {
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Sidebar item styles */
+.mat-list-item {
+  border-bottom: 1px solid #555;
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Sample content for the sidebar */
+.mat-list-item:first-child {
+  margin-top: 0;
+}
+
+/* Adjust the sidebar width */
+.sidenav {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  overflow-y: auto;
+}

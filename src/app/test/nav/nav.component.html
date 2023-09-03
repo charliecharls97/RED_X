@@ -1,18 +1,33 @@
 <mat-sidenav-container class="sidenav-container">
+
   <mat-sidenav #drawer position="end" class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Dark Charlie777</mat-toolbar>
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <app-imagen-perfil></app-imagen-perfil>
+    <mat-nav-list class="mat-nav-list-contactos">
       <a mat-list-item href="#">Contacto 1</a>
       <a mat-list-item href="#">Contacto 2</a>
       <a mat-list-item href="#">Contacto 3</a>
+      <a mat-list-item href="#">Contacto 4</a>
+      <a mat-list-item href="#">Contacto 5</a>
+      <a mat-list-item href="#">Contacto 6</a>
+      <a mat-list-item href="#">Contacto 7</a>
+      <a mat-list-item href="#">Contacto 8</a>
+      <a mat-list-item href="#">Contacto 9</a>
+      <a mat-list-item href="#">Contacto 10</a>
+      <a mat-list-item href="#">Contacto 11</a>
+      <a mat-list-item href="#">Contacto 12</a>
+      <a mat-list-item href="#">Contacto 13</a>
+      <a mat-list-item href="#">Contacto 14</a>
+      <a mat-list-item href="#">Contacto 15</a>
+      <a mat-list-item href="#">Contacto 16</a>
+      <a mat-list-item href="#">Contacto 17</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+      
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -32,5 +47,6 @@
 
     </mat-toolbar>
     <!-- Add Content Here -->
+
   </mat-sidenav-content>
 </mat-sidenav-container>

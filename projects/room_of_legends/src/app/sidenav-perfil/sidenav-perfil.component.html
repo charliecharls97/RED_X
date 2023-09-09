@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav-container" [hasBackdrop]="false">
+  <mat-sidenav #drawer [style.width.px]="sidenavWidth" class="sidenav" position="end" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="true"
+      >
+    <app-sidenav-header-perfil></app-sidenav-header-perfil>
+    <app-nav-list-contactos></app-nav-list-contactos>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="toggleSidenav()"
+        >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>room_of_legends</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

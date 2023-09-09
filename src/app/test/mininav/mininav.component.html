@@ -1,0 +1,24 @@
+<!-- app.component.html -->
+<mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side" [style.width.px]="sidenavWidth" class="custom-sidenav">
+      <!-- Contenido del sidenav -->
+      <div>
+        <h2>Menú</h2>
+        <!-- Agrega tus opciones de navegación aquí -->
+       
+      </div>
+      <mat-nav-list>
+        <a mat-list-item href="#">
+           asasdsdaasd
+        </a>
+        <a mat-list-item href="#">
+        sdfsdfsdf
+        </a>
+      
+    </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!-- Contenido principal -->
+      <button mat-button (click)="toggleSidenav()">Toggle Sidebar</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

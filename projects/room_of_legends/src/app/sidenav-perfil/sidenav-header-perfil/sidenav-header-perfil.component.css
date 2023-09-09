@@ -1,0 +1,21 @@
+.div-perfil {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* height: 200px; ya no utilizar height, porque box-sizing hace todo el trabajo de ajuste de padding-margenes*/
+    /*align-items: flex-end;*/
+    display: flex;  /*acopla los elementos dentro de su contenedor sin sobreponerse, estirandose o contrayendose */
+    padding: 16px;
+    background-color: darkcyan;
+}
+
+.img-perfil {
+    width: 140px;
+}
+
+.toolbar-nick {
+    height: 30px;
+    margin-top: 80px;
+}
+
+

@@ -1,0 +1,36 @@
+.nav-list-contactos {
+
+}
+
+.div-perfil-contacto {
+    /* height: 200px; ya no utilizar height, porque box-sizing hace todo el trabajo de ajuste de padding-margenes*/
+    /*align-items: flex-end;*/
+    display: flex;  /*acopla los elementos dentro de su contenedor sin sobreponerse, estirandose o contrayendose */
+    /*padding: 16px; ya no usar porque la etiqueta mat-item tiene padding de 16 por defecto*/
+    width: 100%; /*mat-item tiene un contenedor interno, por eso el div debe tomar todo el tamaño de el*/
+   
+}
+
+.img-contacto {
+    width: 140px;
+}
+
+.toolbar-nick-contacto {
+    height: 30px;
+    margin-top: 80px;
+}
+
+
+.nav-list-contactos a:nth-child(n){
+    height: 172px;/* 172*/
+}
+
+.img-fondo-contacto {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Establece la posición en absoluta */
+    z-index: -1; /* Establece un valor de z-index más bajo que el del contenido */
+    left: 0px; /* Ajusta el valor para compensar el margen izquierdo */
+    top: 0px;
+  
+}

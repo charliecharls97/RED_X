@@ -15,13 +15,16 @@ import { MatListModule } from '@angular/material/list';
 import { ImagenPerfilComponent } from './test/imagen-perfil/imagen-perfil.component';
 import { MaterialTestComponent } from './test/material-test/material-test.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MininavComponent } from './test/mininav/mininav.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ImagenPerfilComponent,
-    MaterialTestComponent
+    MaterialTestComponent,
+    MininavComponent
   ],
   imports: [
     BrowserModule,

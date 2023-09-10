@@ -14,6 +14,15 @@ import { SidenavPerfilComponent } from './sidenav-perfil/sidenav-perfil.componen
 import { SidenavHeaderPerfilComponent } from './sidenav-perfil/sidenav-header-perfil/sidenav-header-perfil.component';
 import { NavListContactosComponent } from './sidenav-perfil/nav-list-contactos/nav-list-contactos.component';
 import { FormLoginComponent } from './form-login/form-login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 
@@ -24,7 +33,8 @@ import { FormLoginComponent } from './form-login/form-login.component';
     SidenavPerfilComponent,
     SidenavHeaderPerfilComponent,
     NavListContactosComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,14 @@ import { FormLoginComponent } from './form-login/form-login.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

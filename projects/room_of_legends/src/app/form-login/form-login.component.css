@@ -1,0 +1,76 @@
+
+.card-login {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 0%; /* sin padding para acoplar la imagen al borde del elemento */
+   
+}
+  
+.more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.card-content-login {
+    
+    height: 100%; /* toma el 100% de la altura del contenedo/ajustar altura a la del contenedor */
+    display: flex; /* posiciona los elementos en el espacio libre */
+}
+  
+.div-fondo-login {
+    width: 70%; /* porcentaje no reduce su tamaño por zoom, el pixel si porq es fijo */
+    height: 100%; /* toma el 100% de la altura del contenedo/ajustar altura a la del contenedor */
+}
+
+.div-fondo-login img {
+    width: 100%; /* toma el 100% de la ancho del contenedo/ajustar ancho a la del contenedor */
+    height: 100%; /* toma el 100% de la altura del contenedo/ajustar altura a la del contenedor */
+
+}
+
+.card-form-login {
+    background-color: #fafafa;
+    /*background-color: blue;*/
+    /* que el form acapare solo el ancho libre del contenedor */
+    width: 30%;
+    max-width: 30%;
+    /* ------------------------------------------------------ */
+    padding-top: 5%;
+}
+
+.card-title-logo-form-login {
+    /*background-color: aqua;*/
+    margin-bottom: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: #F44336;
+}
+
+.card-title-form-login {
+    /*background-color: red;*/
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.form-login {
+    /*background-color: gold;*/
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#btn-ingresar {
+    font-size: large;
+}
+
+
+  
+

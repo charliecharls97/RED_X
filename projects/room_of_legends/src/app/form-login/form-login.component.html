@@ -1,1 +1,90 @@
-<p>form-login works!</p>
+
+<mat-card class="card-login">
+    <mat-card-content class="card-content-login">
+     
+
+            <div class="div-fondo-login">
+                <img src="../../assets/images/login.jpg" alt="Imagen de fondo">
+            </div>
+            <mat-card class="card-form-login">
+                
+                <mat-card-title class="card-title-logo-form-login">Room of Legends</mat-card-title>
+
+                <mat-card-title class="card-title-form-login">{{ cardTitulo }}</mat-card-title>
+                <mat-tab-group mat-align-tabs="center" class="tab-group-form-login" (selectedTabChange)="cambiarTitulo($event)">
+                    <mat-tab label="Ingresar" >
+                        <!-- Contenido -->
+                        <form class="form-login">
+                
+                            <table class="full-width" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="full-width" appearance="fill">
+                                            <mat-label>NOMBRE DE USUARIO</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="full-width" appearance="fill">
+                                            <mat-label>CONTRASEÑA</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <button mat-raised-button id="btn-ingresar" color="warn">➤</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </mat-tab>
+                    <mat-tab label="Crear Cuenta" (click)="cambiarTitulo('2')">
+                        <!-- Contenido -->
+                        <form class="form-login">
+                
+                            <table class="full-width" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="full-width" appearance="fill">
+                                            <mat-label>NOMBRE DE USUARIO</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="full-width" appearance="fill">
+                                            <mat-label>CONTRASEÑA</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field class="full-width" appearance="fill">
+                                            <mat-label>CONFIRMAR CONTRASEÑA</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button mat-raised-button class="full-width" color="primary">Guardar</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </mat-tab>
+                  </mat-tab-group>
+                
+            </mat-card>
+            
+            
+
+    </mat-card-content>
+</mat-card>
+
+  
